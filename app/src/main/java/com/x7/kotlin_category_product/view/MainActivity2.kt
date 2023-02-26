@@ -61,9 +61,6 @@ class MainActivity2 : AppCompatActivity() {
     }
 
 
-
-
-
     //Show progressbar hide progressbar
     fun showprogressbar(){
         binding.progressBarhorizontal.visibility= View.VISIBLE

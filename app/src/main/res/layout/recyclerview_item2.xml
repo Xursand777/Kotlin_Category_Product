@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="wrap_content">
@@ -9,27 +9,29 @@
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         app:cardUseCompatPadding="true"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:id="@+id/linearlay1"
             android:orientation="vertical"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/imageviewcategory"
+                android:id="@+id/imageviewproduct"
                 android:scaleType="centerCrop"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"></ImageView>
             <TextView
-                android:id="@+id/textviewcategory"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:id="@+id/textviewproduct"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:textSize="18dp"
-                android:text="Category"
+                android:textSize="20dp"
+                android:text="Product"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></TextView>
         </LinearLayout>

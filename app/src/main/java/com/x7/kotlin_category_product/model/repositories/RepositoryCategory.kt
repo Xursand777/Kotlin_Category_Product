@@ -52,9 +52,10 @@ class RepositoryCategory constructor(
     }
 
     fun readfromfirebase(): MutableLiveData<ArrayList<CategoryModel>> {
-        arraylist.clear()
         databaseReference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
+                arraylist.clear()
+
                 for (datasnapshot: DataSnapshot in snapshot.children) {
                     val categoryM = datasnapshot.getValue(CategoryModel::class.java)
                     arraylist.add(categoryM!!)
